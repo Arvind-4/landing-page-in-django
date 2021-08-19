@@ -1,0 +1,27 @@
+{% load static %}
+
+<div style="background-image: url({% static '/img/contact-form.jpg' %}); background-size: cover;">
+    <div class="row justify-content-center" style="padding-top: 70px; padding-bottom: 25px;">
+        <div class="col-xl-6">
+            <div class="text-center">
+                <form method='POST'>{% csrf_token %}
+                    <div class="row">
+                        <div class='col'>
+                            {% for field in form %}
+                                {{field}}
+                                {% if field.errors %}
+                                    {% for err in field.errors %}
+                                        <p><font color='red'>{{err}}</font></p>
+                                    {% endfor %}
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class='col-auto'>
+                            <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
