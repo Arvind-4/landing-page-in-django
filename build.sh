@@ -21,4 +21,4 @@ python3.9 manage.py createsuperuser \
     --noinput || true
 
 echo "Collecting static files..."
-python3.9 manage.py collectstatic -i rest_framework -i flags --noinput --clear
+python3.9 manage.py collectstatic --noinput --clear
