@@ -5,6 +5,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="{% static 'img/logo.jpg' %}">
   {% include 'css/css.html' %}
   <title>{% block title %} {% endblock %}</title>
 </head>
@@ -17,22 +18,17 @@
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
 {% endfor %}
-
 <body style="background-image: url({% static 'img/background.jpg' %}); background-size: cover;">
   <div class="container">
     <div class="card border-0 shadow my-5">
       <div class="card-body bg-dark">
-        {% block content %}
-
-        {% endblock %}
+        {% block content %}{% endblock %}
       </div>
     </div>
   </div>
-
   {% include 'js/js.html' %}
   <footer>
     {% include 'components/footer.html' %}
   </footer>
-
 </body>
 </html>
