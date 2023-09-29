@@ -23,13 +23,9 @@
         "dest": "/static/$1"
       },
       {
-        "src": "/",
+        "src": "/(.*)",
+        "headers": { "cache-control": "s-maxage=0" },
         "dest": "backend/asgi.py"
-      },
-      { 
-        "src": "/(.*)", 
-        "status": 404, 
-        "dest": "backend/asgi.py" 
       }
     ]
   }
