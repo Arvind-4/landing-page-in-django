@@ -3,57 +3,65 @@
 
 Make a Landing Page for your Business with Django and Postgres.
 
-## Stack
+## 📦 Screenshots:
+
+<img src="https://github.com/Arvind-4/Landing-Page-in-Django/blob/main/.github/static/homepage.png?raw=true" alt="Home Page" />
+
+## 📦 Tech Stack:
 
 - [Django](https://www.djangoproject.com) - Django makes it easier to build better web apps more quickly and with less code.
 - [Bootstrap](https://getbootstrap.com/) - Build fast, responsive sites with Bootstrap.
-- [Postgres](https://firebase.google.com/) - The World's Most Advanced Open Source Relational Database.
+- [Postgres](https://www.postgresql.org/) - The World's Most Advanced Open Source Relational Database.
 
----
 
 Deployed on [Vercel](https://vercel.com/). <br/>
-Click Here for [Live Preview.](https://getidea.ml)
+Click Here for [Live Preview.](https://landing-django.vercel.app/)
 
----
+## Deploy Now:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Arvind-4/Landing-Page-in-Django)
 
+## Getting Started: 
 
+- Clone Repo 
 
-
-Add Your Environment variable to `.env`. <br />
- Refer `.sample.env` file.
-
---- 
-# How to Run this Locally
-
-### Step 1: Clone Repository:
-```
+```bash
 cd /path/to/folder
 mkdir landing
 cd landing
 git clone https://github.com/Arvind-4/Landing-Page-in-Django.git .
-```
+```  
 
-### Step 2: Create a Virtual Environment:
-```
+- Create a Virtual Environment
+
+```bash
 pip3 install virtualenv
 cd landing
 python3.9 -m virtualenv .
 source bin/activate
 ```
+
 **For Windows use:** `.\Scripts\activate`
 
-### Step 3: Install Dependencies:
-```
+- Install Dependencies
+
+```bash
 pip install -r requirements.txt
 ```
 
+Add Your Environment variable to `.env`.
+ Refer `.sample.env` file.
 
-### Step 3: Run the Server
-```
+- Make Migrations
+
+```bash
 cd /path/to/folder/landing
 python manage.py makemigrations
 python manage.py migrate
-python manage.py createsuperuser
+```
+
+- Run Dev Server
+
+```bash
 python manage.py runserver localhost:8000
 ```
 
