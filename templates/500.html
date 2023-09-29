@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %} Ideas | Error {% endblock %}
+
+{% block content %}
+
+<div class="d-flex align-items-center justify-content-center vh-100">
+    <div class="text-center">
+        <h1 class="display-1 fw-bold text-light">500</h1>
+        <p class="fs-3"> <span class="text-danger">Opps!</span><span class="text-light">
+            Problem with the server.
+        </span></span></p>
+        <p class="lead text-light">
+            We are working on it.
+          </p>
+        <a href="/" class="btn btn-primary">
+            Return to Home
+        </a>
+    </div>
+</div>
+
+{% endblock %}
