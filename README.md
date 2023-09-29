@@ -66,3 +66,9 @@ python manage.py runserver localhost:8000
 ```
 
 Open [localhost:8000](http://localhost:8000/) in Browser.
+
+## License
+This Project is [MIT Licensed](https://github.com/Arvind-4/Landing-Page-in-Django/blob/main/LICENSE).
+
+## Change Log
+[Logs](https://github.com/Arvind-4/Landing-Page-in-Django/commits/main)
