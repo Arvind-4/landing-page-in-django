@@ -30,3 +30,11 @@ class HomeView(View):
             'form': form,
         }
         return render(request, 'home_view.html', context=context)
+    
+
+
+def custom_404(request, exception, *args, **kwargs):
+    return render(request, '404.html', status=404)
+
+def custom_500(request, *args, **kwargs):
+    return render(request, '500.html', status=500)

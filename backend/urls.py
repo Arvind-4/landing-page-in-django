@@ -18,8 +18,14 @@ from django.urls import path
 from django.conf import settings
 
 from landing.views import HomeView
+from django.views.generic import TemplateView
 
 urlpatterns = [
     path(str(settings.ADMIN_URL), admin.site.urls),
     path('', HomeView.as_view()),
+    path('404', TemplateView.as_view(template_name='404.html')),
+    path('*', TemplateView.as_view(template_name='404.html')),
 ]
+
+handler404 = 'landing.views.custom_404'
+handler500 = 'landing.views.custom_500'
